@@ -30,7 +30,7 @@ struct ContentView: View {
                 case 3:
                     greenCircle
                 default:
-                    allCircle
+                    Text("Что-то пошло не так")
                 }
                 Spacer()
                 button
@@ -39,7 +39,7 @@ struct ContentView: View {
         }
     }
     
-    func colorChange() {
+   private func colorChange() {
         title = "Next"
         lightNumber += 1
         if lightNumber > 3 {
